@@ -1,0 +1,264 @@
+
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #171717;
+    line-height: 1.7;
+}
+
+/* ===== NAVBAR ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7057d9;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #f8f8ff, #ffffff);
+}
+
+.hero p:first-child {
+    font-size: 17px;
+    color: #666666;
+}
+
+.hero h1 {
+    font-size: 58px;
+    font-weight: 750;
+    margin: 15px 0;
+    letter-spacing: -1.5px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #171717;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 17px;
+}
+
+/* ===== BUTTONS ===== */
+.btn,
+button {
+    display: inline-block;
+    margin: 22px 6px 0;
+    padding: 13px 28px;
+    background: #171717;
+    color: #ffffff;
+    border: 1px solid #171717;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #ffffff;
+    color: #171717;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== ALL SECTIONS ===== */
+section:not(.hero) {
+    padding: 75px 10%;
+}
+
+section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+}
+
+/* ===== ABOUT ===== */
+#about p {
+    font-size: 17px;
+    color: #444444;
+    max-width: 900px;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    padding: 12px 24px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background: #ffffff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skills span:hover {
+    background: #171717;
+    color: #ffffff;
+    transform: translateY(-4px);
+    border-color: #171717;
+}
+
+/* ===== PROJECTS ===== */
+.project {
+    padding: 28px;
+    margin-bottom: 22px;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+    border-color: #cccccc;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #555555;
+}
+
+/* ===== CONTACT ===== */
+#contact a {
+    color: #171717;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    color: #7057d9;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #f8f8f8;
+    color: #555555;
+    border-top: 1px solid #eeeeee;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 85px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    section:not(.hero) {
+        padding: 50px 6%;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .project {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .btn {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+}
+
+/* ===== NAVBAR LOGO ===== */
+.logo a {
+    text-decoration: none;
+    color: #171717;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.logo span {
+    color: #171717;
+}
+
+.logo a:hover {
+    opacity: 0.7;
+}
